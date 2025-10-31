@@ -33,7 +33,7 @@ Você precisará ter o **Node.js** e o **npm** (ou yarn) instalados.
 1.  **Clone o repositório:**
     ```bash
     git clone https://github.com/LucasSchemes/calculator.git
-    cd SEU_REPOSITORIO
+    cd calculator
     ```
 2.  **Instale as dependências:**
     ```bash
