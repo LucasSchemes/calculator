@@ -66,6 +66,3 @@ O projeto é composto por dois arquivos principais que implementam toda a funcio
 * A função `compute` utiliza um `switch` para realizar as diferentes operações aritméticas e inclui uma checagem para divisão por zero.
 
 
----
-
-Feito com ❤️ por [Seu Nome/GitHub Username]
