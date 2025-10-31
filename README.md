@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# ⚛️ Calculadora Simples com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma calculadora funcional e estilosa desenvolvida como um projeto prático para aprimorar habilidades em **React Hooks (`useState`)** e **lógica de aplicação**.
 
-## Available Scripts
+  ## ✨ Funcionalidades
 
-In the project directory, you can run:
+* **Operações Básicas:** Adição (`+`), Subtração (`-`), Multiplicação (`*`), Divisão (`/`).
+* **Limpeza Total:** Botão `AC` (All Clear) para resetar o estado.
+* **Deletar Caractere:** Botão `DEL` para apagar o último dígito inserido.
+* **Sinal:** Botão `+/-` para alternar entre números positivos e negativos.
+* **Porcentagem:** Botão `%` para calcular o valor percentual (tanto de um número quanto em relação ao número anterior na operação).
+* **Suporte a Números Decimais:** Utilização do ponto `.` para valores não inteiros.
+* **Cálculo Contínuo:** Permite encadear operações sem a necessidade de pressionar `=` a cada passo.
 
-### `npm start`
+## 🛠️ Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto foi construído utilizando as seguintes tecnologias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **React:** Para a construção da interface de usuário.
+* **JavaScript (ES6+):** Para a lógica da calculadora.
+* **CSS:** Para o design e layout estiloso (incluindo Grid para os botões).
 
-### `npm test`
+## 🚀 Como Executar Localmente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Siga os passos abaixo para ter uma cópia do projeto rodando em sua máquina local:
 
-### `npm run build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Você precisará ter o **Node.js** e o **npm** (ou yarn) instalados.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+    cd SEU_REPOSITORIO
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    # yarn install
+    ```
+3.  **Inicie o projeto:**
+    ```bash
+    npm start
+    # ou
+    # yarn start
+    ```
 
-### `npm run eject`
+O aplicativo deve abrir automaticamente no seu navegador em `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Estrutura do Projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O projeto é composto por dois arquivos principais que implementam toda a funcionalidade e estilo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Arquivo | Descrição |
+| :--- | :--- |
+| `Calculator.jsx` | Componente React principal que contém toda a lógica de estado (`useState`) e as funções de manipulação de botões e cálculo. |
+| `Calculator.css` | Arquivo de estilo que define o visual moderno e escuro da calculadora. |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💡 Destaques da Implementação
 
-## Learn More
+* A lógica central é gerenciada pela função `handleButtonClick`, que direciona as ações para as funções específicas como `compute`, `calculate`, `percentage`, etc.
+* O estado da calculadora é controlado por: `number` (o valor atual em exibição), `operator` (a operação selecionada, e.g., '+') e `previousNumber` (o primeiro operando da operação).
+* A função `compute` utiliza um `switch` para realizar as diferentes operações aritméticas e inclui uma checagem para divisão por zero.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com ❤️ por [Seu Nome/GitHub Username]
