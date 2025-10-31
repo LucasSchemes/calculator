@@ -15,7 +15,7 @@ export default function Calculator() {
     
     function handleButtonClick(value) {
         
-        if (!isNaN(value) || value === '.') {
+        if (!isNaN(value)) {
             setNumber(prev => (prev === "0" ? value : prev + value));
             return;
         } 
